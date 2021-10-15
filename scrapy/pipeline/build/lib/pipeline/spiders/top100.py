@@ -41,3 +41,6 @@ class Top100Spider(scrapy.Spider):
         txt = txt.replace("Weeks on Chart", "")
         txt = txt.replace("Peak Rank", "")
         return txt.strip()
+
+
+

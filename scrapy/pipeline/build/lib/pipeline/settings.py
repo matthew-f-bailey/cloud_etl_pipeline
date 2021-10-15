@@ -19,6 +19,16 @@ NEWSPIDER_MODULE = 'pipeline.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+# Configure item pipelines
+# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+
+FEEDS = {
+    "s3://billboard-top100/%(time)s.json": {
+        "format": "json"
+    }
+}
+
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
