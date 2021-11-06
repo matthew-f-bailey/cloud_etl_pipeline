@@ -1,5 +1,5 @@
 # Automatically created by: shub deploy
-
+# mypyblog@outlook.com
 from setuptools import setup, find_packages
 
 setup(
